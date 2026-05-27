@@ -48,7 +48,6 @@ function restoreConfig(snapshot, setters) {
   setters.setBodyColor(snapshot.bodyColor);
   setters.setDoorColor(snapshot.doorColor);
   setters.setQuantity(snapshot.quantity);
-  setters.setProfitability(snapshot.profitability);
 }
 
 // regenerate КП from stored snapshot + price
