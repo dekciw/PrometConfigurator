@@ -48,7 +48,7 @@ export default function CatalogEditModal({ isOpen, mode = 'edit', model = null, 
   const [photoError, setPhotoError] = useState(null);
 
   const photoUrl = watch('photoUrl');
-  const fallbackPhotoUrl = model?.firestoreKey ? `/img/models/${model.firestoreKey}.png` : null;
+  const fallbackPhotoUrl = model?.firestoreKey ? `${import.meta.env.BASE_URL}img/models/${model.firestoreKey}.png` : null;
   const displayPhotoUrl = photoUrl || fallbackPhotoUrl;
 
   useEffect(() => {

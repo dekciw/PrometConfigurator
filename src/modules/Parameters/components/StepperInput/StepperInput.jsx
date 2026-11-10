@@ -160,7 +160,7 @@ export default function StepperInput({ id, value, min, max, step = 50, onChange,
 		<div className={`${styles.stepper}${limitSide ? ` ${styles.stepperLimit}` : ''}`}>
 			<div className={`${styles.stepperRow}${modified ? ` ${styles.stepperRowModified}` : ''}`}>
 				<button className={styles.stepperBtn} type='button' onClick={() => handleStep(-1)} aria-label='Уменьшить'>
-					<img src='/img/icons/icon-chevron.svg' alt='' width='10' height='8' className={styles.chevronFlipped} />
+					<img src={`${import.meta.env.BASE_URL}img/icons/icon-chevron.svg`} alt='' width='10' height='8' className={styles.chevronFlipped} />
 				</button>
 				{editable && focused ? (
 					<input
@@ -194,7 +194,7 @@ export default function StepperInput({ id, value, min, max, step = 50, onChange,
 					</div>
 				)}
 				<button className={styles.stepperBtn} type='button' onClick={() => handleStep(1)} aria-label='Увеличить'>
-					<img src='/img/icons/icon-chevron.svg' alt='' width='10' height='8' />
+					<img src={`${import.meta.env.BASE_URL}img/icons/icon-chevron.svg`} alt='' width='10' height='8' />
 				</button>
 			</div>
 			<AnimatePresence>

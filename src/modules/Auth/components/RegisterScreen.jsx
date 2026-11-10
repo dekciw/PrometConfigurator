@@ -68,7 +68,7 @@ export default function RegisterScreen() {
     <div className={styles.loginPage}>
       <div className={`${styles.loginCard}${shake ? ` ${styles.loginCardShake}` : ''}`}>
         <div className={styles.loginLogo}>
-          <img src="/img/brand/logo.svg" alt="Промет" className={styles.loginLogoImg} />
+          <img src={`${import.meta.env.BASE_URL}img/brand/logo.svg`} alt="Промет" className={styles.loginLogoImg} />
         </div>
 
         {codeStatus === 'loading' && (

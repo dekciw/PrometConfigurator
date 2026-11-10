@@ -7,7 +7,7 @@ export default function Header({ onLogout, username, isAdmin, user, onLogin }) {
 	return (
 		<header className={styles.header}>
 			<div className={styles.brand}>
-				<img className={styles.logo} src='/img/brand/logo.svg' alt='Промет' />
+				<img className={styles.logo} src={`${import.meta.env.BASE_URL}img/brand/logo.svg`} alt='Промет' />
 				<div className={styles.divider} />
 				<div className={styles.info}>
 					<span className={styles.tagline}>Калькулятор коррекции</span>
@@ -17,7 +17,7 @@ export default function Header({ onLogout, username, isAdmin, user, onLogin }) {
 
 			<img
 				className={styles.decoIcons}
-				src='/img/header/header-icons.svg'
+				src={`${import.meta.env.BASE_URL}img/header/header-icons.svg`}
 				alt=''
 				aria-hidden='true'
 			/>

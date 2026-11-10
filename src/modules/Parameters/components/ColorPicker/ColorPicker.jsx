@@ -50,7 +50,7 @@ export default function ColorPicker({
 	return (
 		<div className={cx(styles.colorPicker, isOpen && styles.colorPickerOpen)} ref={ref}>
 			<button type='button' className={cx(styles.trigger, modified && styles.triggerModified)} aria-expanded={isOpen} onClick={handleTriggerClick}>
-				<img src='/img/icons/icon-color.svg' alt='' width='16' height='16' className={styles.triggerIcon} />
+				<img src={`${import.meta.env.BASE_URL}img/icons/icon-color.svg`} alt='' width='16' height='16' className={styles.triggerIcon} />
 				{selected && (
 					<span
 						className={cx(styles.triggerSwatch, selected.color === '#ffffff' && styles.triggerSwatchLight)}
@@ -62,7 +62,7 @@ export default function ColorPicker({
 				</span>
 				<motion.img
 					className={styles.triggerArrow}
-					src='/img/icons/icon-arrow-down.svg'
+					src={`${import.meta.env.BASE_URL}img/icons/icon-arrow-down.svg`}
 					alt=''
 					animate={{ rotate: isOpen ? 180 : 0 }}
 					transition={{ duration: 0.22, ease: [0.23, 1, 0.32, 1] }}

@@ -52,7 +52,7 @@ export default function LoginScreen() {
     <div className={styles.loginPage}>
       <div className={`${styles.loginCard} animate__animated animate__fadeInUp${shake ? ` ${styles.loginCardShake}` : ''}`}>
         <div className={styles.loginLogo}>
-          <img src='/img/brand/logo.svg' alt='Промет' className={styles.loginLogoImg} />
+          <img src={`${import.meta.env.BASE_URL}img/brand/logo.svg`} alt='Промет' className={styles.loginLogoImg} />
         </div>
 
         <div className={styles.loginHeader}>

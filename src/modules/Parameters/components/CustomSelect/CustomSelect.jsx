@@ -60,7 +60,7 @@ export default function CustomSelect({ id, value, onChange, options, placeholder
 				</span>
 				<motion.img
 					className={styles.cselectArrow}
-					src='/img/icons/icon-arrow-down.svg'
+					src={`${import.meta.env.BASE_URL}img/icons/icon-arrow-down.svg`}
 					alt=''
 					animate={{ rotate: isOpen ? 180 : 0 }}
 					transition={{ duration: 0.22, ease: [0.23, 1, 0.32, 1] }}

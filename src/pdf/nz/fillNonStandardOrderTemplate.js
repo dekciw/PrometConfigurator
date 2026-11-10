@@ -86,7 +86,7 @@ function drawMixed(page, text, x, y, size, cyrFont, latFont) {
 
 export async function fillNonStandardOrderTemplate({ config, catalog, managerName, branch, phone, clientName, price, nzNumber, calcNumber }) {
 
-  const templateBytes = await fetch('/templates/nz/nz-template.pdf').then(r => {
+  const templateBytes = await fetch(`${import.meta.env.BASE_URL}templates/nz/nz-template.pdf`).then(r => {
     if (!r.ok) throw new Error('Не удалось загрузить /templates/nz/nz-template.pdf');
     return r.arrayBuffer();
   });

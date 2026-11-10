@@ -68,7 +68,7 @@ export default function LoadingScreen() {
 			<div className={styles.content}>
 
 				<motion.img
-					src='/img/brand/logo.svg'
+					src={`${import.meta.env.BASE_URL}img/brand/logo.svg`}
 					alt='Промет'
 					className={styles.logo}
 					initial={{ opacity: 0, y: -16 }}

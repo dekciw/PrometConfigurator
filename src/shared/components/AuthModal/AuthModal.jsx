@@ -60,7 +60,7 @@ function LoginForm({ onSwitch, onSuccess, onClose }) {
         <CloseSvg />
       </button>
       <div className={styles.logo}>
-        <img src="/img/brand/logo.svg" alt="Промет" className={styles.logoImg} />
+        <img src={`${import.meta.env.BASE_URL}img/brand/logo.svg`} alt="Промет" className={styles.logoImg} />
       </div>
       <CardHeader title="Вход в систему" subtitle="Конфигуратор шкафов-локеров" />
       <form className={styles.form} onSubmit={handleSubmit(onSubmit)} noValidate>
@@ -147,7 +147,7 @@ function RegisterForm({ onSwitch, onSuccess, onClose }) {
         <CloseSvg />
       </button>
       <div className={styles.logo}>
-        <img src="/img/brand/logo.svg" alt="Промет" className={styles.logoImg} />
+        <img src={`${import.meta.env.BASE_URL}img/brand/logo.svg`} alt="Промет" className={styles.logoImg} />
       </div>
       <CardHeader title="Регистрация" subtitle="Конфигуратор шкафов-локеров" />
       <form className={styles.form} onSubmit={handleSubmit(onSubmit)} noValidate>

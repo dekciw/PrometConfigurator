@@ -44,7 +44,7 @@ function SortableCard({ model, onEdit, onDelete, disabled, position, total }) {
     opacity: isDragging ? 0.5 : 1,
   };
 
-  const photoSrc = model.photoUrl || (model.firestoreKey ? `/img/models/${model.firestoreKey}.png` : null);
+  const photoSrc = model.photoUrl || (model.firestoreKey ? `${import.meta.env.BASE_URL}img/models/${model.firestoreKey}.png` : null);
 
   return (
     <article
@@ -217,7 +217,7 @@ export default function AdminPage({ onLogout, username = '' }) {
         <span className={styles.title}>Панель администратора</span>
         <img
           className={styles.decoIcons}
-          src='/img/header/header-icons.svg'
+          src={`${import.meta.env.BASE_URL}img/header/header-icons.svg`}
           alt=''
           aria-hidden='true'
         />

@@ -128,10 +128,10 @@ export async function fillCommercialProposalTemplate({ config, catalog, price })
   const isLS = config.seriesId?.toLowerCase() === 'ls';
   const seriesPrefix = isLS ? 'LS' : 'ML';
 
-  const templateFile = nonStandardCount === 0 ? `/templates/kp/${seriesPrefix}-0.pdf`
-    : nonStandardCount === 1 ? `/templates/kp/${seriesPrefix}-1.pdf`
-    : nonStandardCount === 2 ? `/templates/kp/${seriesPrefix}-2.pdf`
-    : `/templates/kp/${seriesPrefix}-3.pdf`;
+  const templateFile = nonStandardCount === 0 ? `${import.meta.env.BASE_URL}templates/kp/${seriesPrefix}-0.pdf`
+    : nonStandardCount === 1 ? `${import.meta.env.BASE_URL}templates/kp/${seriesPrefix}-1.pdf`
+    : nonStandardCount === 2 ? `${import.meta.env.BASE_URL}templates/kp/${seriesPrefix}-2.pdf`
+    : `${import.meta.env.BASE_URL}templates/kp/${seriesPrefix}-3.pdf`;
 
   const isMl1 = nonStandardCount === 1;
   const isMl2 = nonStandardCount === 2;
@@ -461,7 +461,7 @@ export async function fillCommercialProposalTemplate({ config, catalog, price })
   if (config.modelId) {
     try {
       const modelData = catalog?.models?.[config.modelId];
-      const photoSrc = modelData?.photoUrl || `/img/models/${config.modelId}.png`;
+      const photoSrc = modelData?.photoUrl || `${import.meta.env.BASE_URL}img/models/${config.modelId}.png`;
       const isJpeg = /\.(jpe?g)$/i.test(photoSrc);
       const imgResp = await fetch(photoSrc);
       if (imgResp.ok) {
@@ -483,7 +483,7 @@ export async function fillCommercialProposalTemplate({ config, catalog, price })
   const lockImgFile = LOCK_IMAGE_MAP[config.lockId];
   if (lockImgFile) {
     try {
-      const imgResp = await fetch(`/img/locks/${lockImgFile}`);
+      const imgResp = await fetch(`${import.meta.env.BASE_URL}img/locks/${lockImgFile}`);
       if (imgResp.ok) {
         const imgBytes = await imgResp.arrayBuffer();
         const isJpeg = lockImgFile.toLowerCase().endsWith('.jpg') || lockImgFile.toLowerCase().endsWith('.jpeg');

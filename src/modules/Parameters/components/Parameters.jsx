@@ -235,7 +235,7 @@ export default function Parameters() {
 		<aside className={styles.parameters}>
 			<div className={styles.titleRow}>
 				<div className={styles.titleGroup}>
-					<img className={styles.titleIcon} src='/img/icons/icon-gear.svg' alt='' width='24' height='24' />
+					<img className={styles.titleIcon} src={`${import.meta.env.BASE_URL}img/icons/icon-gear.svg`} alt='' width='24' height='24' />
 					<h2 className={styles.title}>Параметры</h2>
 				</div>
 				{stepperStep === 3 && (
@@ -300,7 +300,7 @@ export default function Parameters() {
 										options={(catalog.series ?? []).map(s => ({ value: s.id, label: s.name }))}
 										isOpen={openSelectId === 'series'}
 										onOpenChange={handleSeriesOpen}
-										leftIcon={<img src='/img/icons/icon-series.svg' alt='' width='16' height='16' />}
+										leftIcon={<img src={`${import.meta.env.BASE_URL}img/icons/icon-series.svg`} alt='' width='16' height='16' />}
 									/>
 									{!seriesId && <p className={styles.hint}>Начните с выбора серии шкафа</p>}
 								</div>
@@ -321,7 +321,7 @@ export default function Parameters() {
 										options={modelEntries.map(([id, m]) => ({ value: id, label: m.name }))}
 										isOpen={openSelectId === 'model'}
 										onOpenChange={handleModelOpen}
-										leftIcon={<img src='/img/icons/icon-model.svg' alt='' width='16' height='16' />}
+										leftIcon={<img src={`${import.meta.env.BASE_URL}img/icons/icon-model.svg`} alt='' width='16' height='16' />}
 									/>
 									{!modelId && <p className={styles.hint}>Теперь выберите модель шкафа</p>}
 								</div>
@@ -406,7 +406,7 @@ export default function Parameters() {
 										options={lockEntries.map(([id, lock]) => ({ value: id, label: lock.name.replace(/^Замок\s+/i, '') }))}
 										isOpen={openSelectId === 'lock'}
 										onOpenChange={handleLockOpen}
-										leftIcon={<img src='/img/icons/icon-lock.svg' alt='' width='16' height='16' />}
+										leftIcon={<img src={`${import.meta.env.BASE_URL}img/icons/icon-lock.svg`} alt='' width='16' height='16' />}
 										modified={lockModified}
 									/>
 								</motion.div>
@@ -468,7 +468,7 @@ export default function Parameters() {
 													whileTap={{ scale: 0.94 }}
 													transition={{ duration: 0.1 }}
 												>
-													<img src={isActive ? '/img/icons/icon-thickness-active.svg' : '/img/icons/icon-thickness.svg'} alt='' width='16' height='16' />
+													<img src={isActive ? `${import.meta.env.BASE_URL}img/icons/icon-thickness-active.svg` : `${import.meta.env.BASE_URL}img/icons/icon-thickness.svg`} alt='' width='16' height='16' />
 													{t}
 												</motion.button>
 											);
@@ -489,7 +489,7 @@ export default function Parameters() {
 													whileTap={{ scale: 0.94 }}
 													transition={{ duration: 0.1 }}
 												>
-													<img src={isActive ? '/img/icons/icon-thickness-active.svg' : '/img/icons/icon-thickness.svg'} alt='' width='16' height='16' />
+													<img src={isActive ? `${import.meta.env.BASE_URL}img/icons/icon-thickness-active.svg` : `${import.meta.env.BASE_URL}img/icons/icon-thickness.svg`} alt='' width='16' height='16' />
 													{t}
 												</motion.button>
 											);
@@ -509,7 +509,7 @@ export default function Parameters() {
 										]}
 										isOpen={openSelectId === 'ventilation'}
 										onOpenChange={handleVentilationOpen}
-										leftIcon={<img src='/img/icons/icon-ventilation.svg' alt='' width='16' height='16' />}
+										leftIcon={<img src={`${import.meta.env.BASE_URL}img/icons/icon-ventilation.svg`} alt='' width='16' height='16' />}
 										modified={ventilationModified}
 									/>
 								</motion.div>
