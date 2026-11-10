@@ -67,15 +67,44 @@
   </tr>
 </table>
 
-<h3 align="center">Как это выглядит</h3>
+<h3 align="center">Как это работает</h3>
 
 <table align="center">
   <tr>
-    <td align="center" valign="top"><img src="assets/screen-model.png" width="330" alt="Выбор модели шкафа из каталога серии ML"><br><sub>Выбор модели</sub></td>
-    <td align="center" valign="top"><img src="assets/screen-params.png" width="330" alt="Собранная конфигурация, параметры и итоговая цена"><br><sub>Параметры и цена</sub></td>
-    <td align="center" valign="top"><img src="assets/screen-mobile.png" width="120" alt="Мобильная версия: панель параметров"><br><sub>Мобильная версия</sub></td>
+    <td width="50%" align="center" valign="top">
+      <img src="assets/step-1-series.png" width="420" alt="Шаг 1: выбор серии шкафа"><br>
+      <b>1. Серия</b><br>
+      <sub>Выбираем серию шкафа: ML или LS</sub>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <img src="assets/step-2-model.png" width="420" alt="Шаг 2: выбор модели из каталога"><br>
+      <b>2. Модель</b><br>
+      <sub>Выбираем модель из каталога серии</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <img src="assets/step-3-params.png" width="420" alt="Шаг 3: изменение параметров и пересчёт цены"><br>
+      <b>3. Параметры</b><br>
+      <sub>Меняем замок, цвет, толщину и размеры. Каждое изменение и доплата видны сразу, цена пересчитывается</sub>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <img src="assets/step-4-kp.png" width="420" alt="Шаг 4: окно коммерческого предложения"><br>
+      <b>4. Коммерческое предложение</b><br>
+      <sub>Проверяем конфигурацию, указываем цену для клиента и скачиваем PDF</sub>
+    </td>
   </tr>
 </table>
+
+<h3 align="center">Что на выходе</h3>
+
+<p align="center">
+  <img src="assets/kp-example.png" width="420" alt="Пример коммерческого предложения в PDF: фото шкафа, итоговая конфигурация, цвета, замок и цена">
+</p>
+
+<p align="center">
+  <sub>Готовое коммерческое предложение в PDF: фото модели, цвета корпуса и двери, габариты, замок, количество и цена за штуку</sub>
+</p>
 
 <br>
 
