@@ -16,12 +16,12 @@
   <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black" alt="React 19">
   <img src="https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white" alt="Vite 8">
   <img src="https://img.shields.io/badge/Firebase-Auth_%2B_Firestore-FFCA28?logo=firebase&logoColor=black" alt="Firebase">
-  <a href="https://github.com/dekciw/promet-lokers/releases/latest"><img src="https://img.shields.io/github/v/release/dekciw/promet-lokers?color=005EC4" alt="Release"></a>
-  <a href="https://dekciw.github.io/promet-lokers/"><img src="https://img.shields.io/badge/GitHub_Pages-online-222222?logo=github&logoColor=white" alt="GitHub Pages"></a>
+  <a href="https://github.com/dekciw/PrometConfigurator/releases/latest"><img src="https://img.shields.io/github/v/release/dekciw/PrometConfigurator?color=005EC4" alt="Release"></a>
+  <a href="https://dekciw.github.io/PrometConfigurator/"><img src="https://img.shields.io/badge/GitHub_Pages-online-222222?logo=github&logoColor=white" alt="GitHub Pages"></a>
 </p>
 
 <p align="center">
-  <a href="https://dekciw.github.io/promet-lokers/">
+  <a href="https://dekciw.github.io/PrometConfigurator/">
     <img src="https://img.shields.io/badge/Открыть_в_браузере-005EC4?style=for-the-badge" alt="Открыть в браузере">
   </a>
 </p>
