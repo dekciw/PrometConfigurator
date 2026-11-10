@@ -170,12 +170,6 @@ VITE_FIREBASE_APP_ID=...
 
 </details>
 
-<br>
-
-<p align="center">
-  <sub>© 1991–2026 ООО «НПО Промет». Все права защищены.</sub>
-</p>
-
 <!-- Pull Shark 1 -->
 
 <!-- Pull Shark 2 -->
