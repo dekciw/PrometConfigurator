@@ -67,6 +67,16 @@
   </tr>
 </table>
 
+<h3 align="center">Как это выглядит</h3>
+
+<table align="center">
+  <tr>
+    <td align="center" valign="top"><img src="assets/screen-model.png" width="330" alt="Выбор модели шкафа из каталога серии ML"><br><sub>Выбор модели</sub></td>
+    <td align="center" valign="top"><img src="assets/screen-params.png" width="330" alt="Собранная конфигурация, параметры и итоговая цена"><br><sub>Параметры и цена</sub></td>
+    <td align="center" valign="top"><img src="assets/screen-mobile.png" width="120" alt="Мобильная версия: панель параметров"><br><sub>Мобильная версия</sub></td>
+  </tr>
+</table>
+
 <p align="center">
   <sub>Конфигуратор и документы работают без регистрации. Вход нужен только для истории и админ-панели.</sub>
 </p>
