@@ -1,7 +1,7 @@
 import { Link } from 'react-router';
 import styles from './Header.module.css';
 
-export default function Header({ onLogout, username, isAdmin, user, onLogin }) {
+export default function Header({ onLogout, username, isAdmin, user }) {
 	const initial = username ? username[0].toUpperCase() : '?';
 
 	return (
@@ -23,7 +23,7 @@ export default function Header({ onLogout, username, isAdmin, user, onLogin }) {
 			/>
 
 			<div className={styles.userArea}>
-				{user ? (
+				{user && (
 					<>
 						<Link to="/history" className={styles.adminLink} aria-label="История скачанных КП">
 							История
@@ -51,14 +51,6 @@ export default function Header({ onLogout, username, isAdmin, user, onLogin }) {
 							</button>
 						</div>
 					</>
-				) : (
-					<button
-						type='button'
-						className={styles.loginBtn}
-						onClick={onLogin}
-					>
-						Войти
-					</button>
 				)}
 			</div>
 		</header>

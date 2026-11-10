@@ -64,7 +64,7 @@ function buildThicknessOptions(baseVal, series) {
 }
 
 export default function Parameters() {
-	const { config, catalog, setters, setParametersUnlocked, user, openAuthModal } = useAppContext();
+	const { config, catalog, setters, setParametersUnlocked, user } = useAppContext();
 	const {
 		setSeriesId,
 		onModelChange,
@@ -161,14 +161,6 @@ export default function Parameters() {
 	}
 
 	function handleSeriesSelect(newSeriesId) {
-		if (!user) {
-			openAuthModal(() => {
-				setSeriesId(newSeriesId, () => {
-					if (stepperStepRef.current === 1) goToStep(2);
-				});
-			}, 'login');
-			return;
-		}
 		setSeriesId(newSeriesId, () => {
 			if (stepperStepRef.current === 1) goToStep(2);
 		});
